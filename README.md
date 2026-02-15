@@ -4,7 +4,7 @@ High-Fidelity Full-Stack Profile Page Replica
 
 ## Live Demo
 
-Frontend (Vercel): https://your-frontend-url.vercel.app
+Frontend (Vercel): https://the-profile-project-xi.vercel.app/
 
 Backend (Render): https://your-backend-url.onrender.com
 
