@@ -1,0 +1,325 @@
+/* ============================================
+   Profile Edit Form - Professional SaaS Style
+   ============================================ */
+
+/* CSS Variables */
+:root {
+  --bg-main: #f5f7fa;
+  --card-bg: #ffffff;
+  --text-primary: #2c3e50;
+  --text-secondary: #5a6c7d;
+  --text-label: #4a5568;
+  --border-light: #dce1e7;
+  --border-focus: #5294d1;
+  --input-bg: #ffffff;
+  --header-bg: #f8f9fb;
+  --hover-row: #fafbfc;
+  --btn-save: #28a569;
+  --btn-save-hover: #229556;
+  --btn-cancel: #dc4545;
+  --btn-cancel-hover: #c23939;
+  --shadow-card: 0 1px 4px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-focus: 0 0 0 3px rgba(82, 148, 209, 0.15);
+}
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* ============================================
+   Main Container
+   ============================================ */
+.edit-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  min-height: 100vh;
+}
+
+/* ============================================
+   Basic Information Section
+   ============================================ */
+.edit-table {
+  width: 100%;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: var(--shadow-card);
+  padding: 40px;
+  margin-bottom: 28px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.edit-table tbody tr {
+  border: none;
+}
+
+.edit-table td {
+  padding: 15px 0;
+  vertical-align: top;
+}
+
+.edit-table td:first-child {
+  width: 150px;
+  padding-right: 28px;
+  padding-top: 19px;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text-label);
+}
+
+.edit-table td:last-child {
+  width: auto;
+}
+
+/* Input Fields - Basic Info */
+.edit-table input[type="text"],
+.edit-table textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+  color: var(--text-primary);
+  background-color: var(--input-bg);
+  line-height: 1.5;
+}
+
+.edit-table textarea {
+  min-height: 105px;
+  resize: vertical;
+}
+
+.edit-table input[type="text"]:focus,
+.edit-table textarea:focus {
+  outline: none;
+  border-color: var(--border-focus);
+  box-shadow: var(--shadow-focus);
+}
+
+.edit-table input[type="text"]::placeholder,
+.edit-table textarea::placeholder {
+  color: #9ca6b2;
+}
+
+/* ============================================
+   Work Experience Section
+   ============================================ */
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  letter-spacing: -0.01em;
+}
+
+.timeline-table {
+  width: 100%;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: var(--shadow-card);
+  padding: 40px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* Table Header */
+.timeline-table thead {
+  background-color: var(--header-bg);
+}
+
+.timeline-table thead tr {
+  border: none;
+}
+
+.timeline-table th {
+  padding: 13px 14px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: none;
+}
+
+.timeline-table th:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding-left: 16px;
+}
+
+.timeline-table th:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding-right: 16px;
+}
+
+/* Table Body */
+.timeline-table tbody tr {
+  border-bottom: 1px solid #f0f2f5;
+}
+
+.timeline-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.timeline-table tbody tr:hover {
+  background-color: var(--hover-row);
+}
+
+.timeline-table td {
+  padding: 16px 14px;
+  vertical-align: top;
+  border: none;
+}
+
+.timeline-table td:first-child {
+  padding-left: 16px;
+}
+
+.timeline-table td:last-child {
+  padding-right: 16px;
+}
+
+/* Column Widths */
+.timeline-table th:nth-child(1),
+.timeline-table td:nth-child(1) {
+  width: 16%;
+}
+
+.timeline-table th:nth-child(2),
+.timeline-table td:nth-child(2) {
+  width: 16%;
+}
+
+.timeline-table th:nth-child(3),
+.timeline-table td:nth-child(3) {
+  width: 12%;
+}
+
+.timeline-table th:nth-child(4),
+.timeline-table td:nth-child(4) {
+  width: 12%;
+}
+
+.timeline-table th:nth-child(5),
+.timeline-table td:nth-child(5) {
+  width: 44%;
+}
+
+/* Input Fields - Work Experience */
+.timeline-table input[type="text"],
+.timeline-table textarea {
+  width: 100%;
+  padding: 10px 13px;
+  border: 1px solid var(--border-light);
+  border-radius: 7px;
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--text-primary);
+  background-color: var(--input-bg);
+  line-height: 1.5;
+}
+
+.timeline-table textarea {
+  min-height: 82px;
+  resize: vertical;
+}
+
+.timeline-table input[type="text"]:focus,
+.timeline-table textarea:focus {
+  outline: none;
+  border-color: var(--border-focus);
+  box-shadow: var(--shadow-focus);
+}
+
+/* ============================================
+   Buttons Section
+   ============================================ */
+.button-group {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-start;
+  margin-top: 32px;
+}
+
+.save-btn,
+.cancel-btn {
+  padding: 12px 32px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  letter-spacing: 0.01em;
+}
+
+.save-btn {
+  background-color: var(--btn-save);
+  color: #ffffff;
+}
+
+.save-btn:hover {
+  background-color: var(--btn-save-hover);
+}
+
+.cancel-btn {
+  background-color: var(--btn-cancel);
+  color: #ffffff;
+}
+
+.cancel-btn:hover {
+  background-color: var(--btn-cancel-hover);
+}
+
+.save-btn:active,
+.cancel-btn:active {
+  transform: translateY(0);
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+@media (max-width: 768px) {
+  .edit-container {
+    padding: 24px 16px;
+  }
+
+  .edit-table,
+  .timeline-table {
+    padding: 28px 24px;
+  }
+
+  .edit-table td:first-child {
+    width: 110px;
+    padding-right: 18px;
+  }
+
+  .timeline-table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .save-btn,
+  .cancel-btn {
+    width: 100%;
+  }
+}

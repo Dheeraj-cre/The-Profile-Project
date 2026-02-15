@@ -1,0 +1,47 @@
+/* ============================================
+   Profile Header - Clean SaaS Style
+============================================ */
+
+.profile-header {
+  text-align: center;
+}
+
+/* Profile Image */
+.profile-header__image {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 18px;
+  border: 4px solid #f1f3f5;
+}
+
+/* Name */
+.profile-header__name {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #2c3e50;
+}
+
+/* Bio */
+.profile-header__bio {
+  font-size: 14px;
+  color: #5a6c7d;
+  line-height: 1.6;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+
+  .profile-header__image {
+    width: 140px;
+    height: 140px;
+  }
+
+  .profile-header__bio {
+    max-width: 100%;
+  }
+}

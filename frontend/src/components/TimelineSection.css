@@ -1,0 +1,81 @@
+/* ============================================
+   Timeline Section - Clean SaaS Style
+============================================ */
+
+.timeline-section {
+  padding-top: 10px;
+}
+
+/* Title */
+.timeline-section__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #2c3e50;
+}
+
+/* Timeline List */
+.timeline-section__list {
+  position: relative;
+}
+
+/* Each Item */
+.timeline-section__item {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 30px;
+  border-left: 2px solid #e5e7eb;
+}
+
+/* Dot */
+.timeline-section__dot {
+  position: absolute;
+  left: -6px;
+  top: 6px;
+  width: 11px;
+  height: 11px;
+  background-color: #4f46e5;
+  border-radius: 50%;
+}
+
+/* Content */
+.timeline-section__content {
+  padding-left: 6px;
+}
+
+/* Role */
+.timeline-section__role {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #2c3e50;
+}
+
+/* Company */
+.timeline-section__company {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 3px;
+}
+
+/* Duration */
+.timeline-section__duration {
+  font-size: 12px;
+  color: #9ca3af;
+  margin-bottom: 6px;
+}
+
+/* Description */
+.timeline-section__description {
+  font-size: 13px;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .timeline-section__item {
+    padding-left: 20px;
+  }
+}
