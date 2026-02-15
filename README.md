@@ -6,7 +6,7 @@ High-Fidelity Full-Stack Profile Page Replica
 
 Frontend (Vercel): https://the-profile-project-xi.vercel.app/
 
-Backend (Render): https://your-backend-url.onrender.com
+Backend (Render): https://the-profile-project.onrender.com/
 
 ## GitHub Repository
 
