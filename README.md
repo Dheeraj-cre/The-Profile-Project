@@ -236,10 +236,4 @@ Responsive SaaS-style frontend
 
 Maintainable and scalable architecture
 
-## Author
 
-Dheeraj Srivastava
-Full Stack Developer (React & Node.js)
-LinkedIn: www.linkedin.com/in/dheerajsri
-
-GitHub: https://github.com/Dheeraj-cre
