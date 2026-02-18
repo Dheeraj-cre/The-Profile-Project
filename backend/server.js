@@ -13,7 +13,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// ✅ THIS LINE MUST EXIST
+
 app.use("/api/profile", profileRoutes);
 
 app.get("/", (req, res) => {
